@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <script src="https://sdpi-components.dev/releases/v4/sdpi-components.js"></script>
+</head>
+<body>
+  <sdpi-item label="Stratageme">
+    <sdpi-select setting="preset" placeholder="Choisir...">
+      <option value="custom">— Personnalise —</option>
+        <option value="reinforce">Renforts &nbsp;(UDRLU) &nbsp;0s</option>
+        <option value="resupply">Ravitaillement &nbsp;(DDUR) &nbsp;180s</option>
+        <option value="hellbomb">Hellbomb &nbsp;(DULDURDU) &nbsp;0s</option>
+        <option value="sos">Balise SOS &nbsp;(UDRU) &nbsp;0s</option>
+        <option value="eagle-strafe">Mitraillage &nbsp;(URR) &nbsp;8s</option>
+        <option value="eagle-airstrike">Frappe aérienne &nbsp;(URDR) &nbsp;8s</option>
+        <option value="eagle-cluster">Bombe à fragm. &nbsp;(URDDR) &nbsp;8s</option>
+        <option value="eagle-napalm">Napalm &nbsp;(URDU) &nbsp;8s</option>
+        <option value="eagle-smoke">Fumigène aérien &nbsp;(URUD) &nbsp;8s</option>
+        <option value="eagle-rocket">Roquettes 110mm &nbsp;(URUL) &nbsp;8s</option>
+        <option value="eagle-500kg">Bombe 500kg &nbsp;(URDDD) &nbsp;8s</option>
+        <option value="orbital-gatling">Barrage gatling &nbsp;(RDLUU) &nbsp;70s</option>
+        <option value="orbital-airburst">Frappe à air &nbsp;(RRR) &nbsp;100s</option>
+        <option value="orbital-120">Barrage 120mm &nbsp;(RRDLRD) &nbsp;180s</option>
+        <option value="orbital-380">Barrage 380mm &nbsp;(RDUULDD) &nbsp;240s</option>
+        <option value="orbital-walking">Barrage roulant &nbsp;(RDRDRD) &nbsp;240s</option>
+        <option value="orbital-laser">Laser orbital &nbsp;(RDURD) &nbsp;300s</option>
+        <option value="orbital-railcannon">Canon rail &nbsp;(RUDDR) &nbsp;210s</option>
+        <option value="orbital-precision">Frappe précise &nbsp;(RRU) &nbsp;90s</option>
+        <option value="orbital-gas">Frappe à gaz &nbsp;(RRDR) &nbsp;75s</option>
+        <option value="orbital-ems">Frappe EMS &nbsp;(RRLD) &nbsp;75s</option>
+        <option value="orbital-smoke">Fumigène orbital &nbsp;(RRDU) &nbsp;100s</option>
+        <option value="mg">Mitrailleuse &nbsp;(DLDUR) &nbsp;480s</option>
+        <option value="amr">Fusil antimatériel &nbsp;(DLRUD) &nbsp;480s</option>
+        <option value="stalwart">Stalwart &nbsp;(DLDUUL) &nbsp;480s</option>
+        <option value="eat">EAT-17 &nbsp;(DDLUR) &nbsp;70s</option>
+        <option value="recoilless">Sans recul &nbsp;(DLRRL) &nbsp;480s</option>
+        <option value="flamethrower">Lance-flammes &nbsp;(DLUDU) &nbsp;480s</option>
+        <option value="autocannon">Autocanon &nbsp;(DLDUUR) &nbsp;480s</option>
+        <option value="railgun">Railgun &nbsp;(DRDULR) &nbsp;480s</option>
+        <option value="spear">Spear &nbsp;(DDUDD) &nbsp;480s</option>
+        <option value="grenade-launcher">Lance-grenades &nbsp;(DLULD) &nbsp;480s</option>
+        <option value="laser-cannon">Canon laser &nbsp;(DLDUL) &nbsp;480s</option>
+        <option value="arc-thrower">Arc thrower &nbsp;(DRDULL) &nbsp;480s</option>
+        <option value="quasar">Quasar &nbsp;(DDULR) &nbsp;480s</option>
+        <option value="jump-pack">Jump pack &nbsp;(DUUDU) &nbsp;480s</option>
+        <option value="supply-pack">Sac ravitaillement &nbsp;(DLDUUD) &nbsp;480s</option>
+        <option value="guard-dog">Guard Dog &nbsp;(DULURD) &nbsp;480s</option>
+        <option value="rover">Guard Dog Rover &nbsp;(DULURR) &nbsp;480s</option>
+        <option value="shield-pack">Bouclier perso &nbsp;(DULRLR) &nbsp;480s</option>
+        <option value="sentry-mg">Tourelle mitr. &nbsp;(DURRU) &nbsp;180s</option>
+        <option value="sentry-gatling">Tourelle gatling &nbsp;(DURL) &nbsp;180s</option>
+        <option value="sentry-mortar">Tourelle mortier &nbsp;(DURRD) &nbsp;180s</option>
+        <option value="sentry-autocannon">Tourelle autoc. &nbsp;(DURULU) &nbsp;180s</option>
+        <option value="sentry-rocket">Tourelle roquettes &nbsp;(DURRL) &nbsp;180s</option>
+        <option value="sentry-ems">Tourelle EMS &nbsp;(DURDR) &nbsp;180s</option>
+        <option value="tesla">Tour Tesla &nbsp;(DURULR) &nbsp;180s</option>
+        <option value="hmg-emplacement">Emplacement HMG &nbsp;(DULRRL) &nbsp;180s</option>
+        <option value="shield-relay">Relais bouclier &nbsp;(DDLRLD) &nbsp;180s</option>
+        <option value="mines-at">Mines antichar &nbsp;(DLUR) &nbsp;180s</option>
+        <option value="mines-inc">Mines incendiaires &nbsp;(DLLD) &nbsp;180s</option>
+    </sdpi-select>
+  </sdpi-item>
+
+  <sdpi-item label="Nom">
+    <sdpi-textfield setting="name" placeholder="Laisser vide = nom du prereglage"></sdpi-textfield>
+  </sdpi-item>
+
+  <sdpi-item label="Code">
+    <sdpi-textfield setting="code" placeholder="Ex : UDRL  (U haut, D bas, L gauche, R droite)"></sdpi-textfield>
+  </sdpi-item>
+
+  <sdpi-item label="Recharge (s)">
+    <sdpi-textfield setting="cooldown" placeholder="Laisser vide = valeur du prereglage"></sdpi-textfield>
+  </sdpi-item>
+
+  <sdpi-item label="Touche stratageme">
+    <sdpi-select setting="trigger" default="HOME">
+      <option value="HOME">Home / Debut</option>
+      <option value="CTRL">Ctrl</option>
+      <option value="END">Fin</option>
+      <option value="ALT">Alt</option>
+      <option value="SHIFT">Maj</option>
+    </sdpi-select>
+  </sdpi-item>
+
+  <sdpi-item label="Rythme (ms)">
+    <sdpi-range setting="delayMs" min="20" max="150" step="5" default="45" showlabels></sdpi-range>
+  </sdpi-item>
+
+  <sdpi-item label="Mode d'emploi">
+    <sdpi-item-value>
+      Appui bref : envoie le code et lance le compte a rebours.
+      Appui long : remet le compteur a zero (utile si le stratageme
+      n'a pas ete lance).
+    </sdpi-item-value>
+  </sdpi-item>
+
+  <sdpi-item label="Precision">
+    <sdpi-item-value>
+      Le jeu ne communique rien : le compte a rebours est une estimation
+      qui demarre a l'appui, alors que la recharge reelle demarre a
+      l'explosion de la balise. Les temps des prereglages changent a
+      chaque patch — le champ Recharge permet de les corriger.
+      Le jeu doit etre configure en mode APPUI (et non maintien) pour
+      la touche stratageme.
+    </sdpi-item-value>
+  </sdpi-item>
+</body>
+</html>

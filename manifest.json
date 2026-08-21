@@ -1,0 +1,44 @@
+{
+  "$schema": "https://schemas.elgato.com/streamdeck/plugins/manifest.json",
+  "UUID": "io.github.nounns.helldivers",
+  "Name": "Helldivers 2 Stratagems",
+  "Version": "1.0.0.0",
+  "Author": "nounns",
+  "Description": "Envoie les codes de stratagemes et simule leur temps de recharge.",
+  "URL": "https://github.com/nounns",
+  "Category": "Helldivers 2",
+  "CategoryIcon": "static/imgs/plugin/category-icon",
+  "Icon": "static/imgs/plugin/marketplace",
+  "CodePath": "bin/plugin.js",
+  "SDKVersion": 2,
+  "Software": {
+    "MinimumVersion": "7.1"
+  },
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Nodejs": {
+    "Version": "24",
+    "Debug": "enabled"
+  },
+  "Actions": [
+    {
+      "Name": "Stratageme",
+      "UUID": "io.github.nounns.helldivers.stratagem",
+      "Icon": "static/imgs/actions/stratagem/icon",
+      "PropertyInspectorPath": "ui/stratagem.html",
+      "Tooltip": "Envoie le code puis lance le compte a rebours. Appui long = remise a zero.",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "static/imgs/actions/stratagem/key"
+        }
+      ]
+    }
+  ]
+}
